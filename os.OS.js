@@ -58,11 +58,23 @@ function startUp() {
                 function newFunction1() {
                     return "What are you going to do now" + typeof name;
                 }
-                if (command === "newAccount") {
+                if (command === "newAccount()") {
                     var name = prompt("What is your name?");
                     console.log( + typeof name, "is your name.");
                     var passwordChoice = prompt("Create a password.");
                     console.log( + typeof passwordChoice, "is your password.");
+                    account.push(name)
+                    password.push(passwordChoice)
+                    var command = prompt("What would you like to do, " + typeof name, "?");
+                }
+                if (command === "changeAccount()") {
+                    console.log("Which account would you like to switch to?");
+                    return account
+                    var chooseAccount = prompt("Choose which account you would like to switch to.");
+                    console.log("Welcome back, " + typeof chooseAccount, ".");
+                    name.splice(1)
+                    name.Push(chooseAccount)
+                    var command = prompt("What would you like to do, " + typeof chooseAccount, "?");
                 }
             }
         }
