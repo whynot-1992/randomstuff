@@ -31,7 +31,7 @@ function startUp() {
                     console.log("passwords()");
                     console.log("newAccount()");
                     console.log("changeAccount()");
-                    console.log("fun()")
+                    console.log("fun()");
                     console.log("More commands comming soon.");
                     var command = prompt("What are you going to do now, " + typeof nameNew, "?");
                 }
@@ -83,6 +83,10 @@ function startUp() {
                     console.log("You smell like a monkey...");
                     console.log("And you look like one too!");
                     var command = prompt("What would you like to do, " + typeof name, "?")
+                }
+                if (command === "XDXDXD") {
+                    console.log("XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD")
+                    var command = prompt("What are you going to do now, " + typeof name, "?")
                 }
             }
         }
