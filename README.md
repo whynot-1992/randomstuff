@@ -9,3 +9,7 @@ Update notes (os.OS):
 -fun() feature added (Bonus Feature).
 
 More updates coming soon.
+
+Notes:
+
+-Remember to brainstorm ideas for new functionz
