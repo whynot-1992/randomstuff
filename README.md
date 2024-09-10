@@ -1,6 +1,6 @@
 # mainSpace
 
-Update notes:
+Update notes (os.OS):
 
 -addAccount() feature fully released.
 
