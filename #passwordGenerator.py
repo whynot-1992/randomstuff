@@ -1,4 +1,5 @@
 #passwordGenerator
+import random
 
 print("Password generator")
 print()
