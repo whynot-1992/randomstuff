@@ -1,5 +1,10 @@
 const account = []
 const password = []
+const apps = [
+    "Guess the number",
+    "Boogle",
+    "Settings"
+]
 
 function startUp() {
     console.log("Welcome to os.OS. What would you like to do?");
@@ -31,6 +36,7 @@ function startUp() {
                     console.log("passwords()");
                     console.log("newAccount()");
                     console.log("changeAccount()");
+                    console.log("apps()");
                     console.log("fun()");
                     console.log("More commands comming soon.");
                     var command = prompt("What are you going to do now, " + typeof nameNew, "?");
@@ -82,11 +88,24 @@ function startUp() {
                     console.log("Your a hundred and two!");
                     console.log("You smell like a monkey...");
                     console.log("And you look like one too!");
-                    var command = prompt("What would you like to do, " + typeof name, "?")
+                    var command = prompt("What would you like to do, " + typeof name, "?");
                 }
                 if (command === "XDXDXD") {
-                    console.log("XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD")
-                    var command = prompt("What are you going to do now, " + typeof name, "?")
+                    console.log("XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD");
+                    var command = prompt("What are you going to do now, " + typeof name, "?");
+                }
+                if (command === "apps()") {
+                    console.log("What would you like to do?");
+                    return apps
+                    var appChoice = prompt("What would you like to do?");
+                    if (appChoice === "Boogle" || appChoice === "boogle") {
+                        console.log("Welcome to Boogle, " + typeof name, ".");
+                        console.log("Sorry, Boogle is down right now. Come back later!");
+                        console.log("Rerun this program to exit Boogle.");
+                    }
+                    if (appChoice === "Guess the number" || appChoice === "guess the number") {
+                        console.log("Welcome to guess the number!");
+                    }
                 }
             }
         }
