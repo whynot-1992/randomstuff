@@ -12,4 +12,4 @@ More updates coming soon.
 
 Notes:
 
--Remember to brainstorm ideas for new functionz
+-Remember to brainstorm ideas for new functions
