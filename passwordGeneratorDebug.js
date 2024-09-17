@@ -30,8 +30,8 @@ function passwordGenerate() {
     const randomNumber = numList[numIndex];
 
     const password = randomWord + randomNumber;
-
-    return password;
+    console.log("Generating password...")
+    setTimeout(() => return password;, 1)
 }
 
 const generatedPassword = passwordGenerate();
