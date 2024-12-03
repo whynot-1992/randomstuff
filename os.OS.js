@@ -46,7 +46,6 @@ function mainMenu(name) {
             console.log("versions");
             console.log("passwords");
             console.log("newAccount");
-            console.log("changeAccount");
             console.log("More commands comming soon.");
             break;
         case "endprogram":
