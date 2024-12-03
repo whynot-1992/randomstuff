@@ -33,31 +33,44 @@ function createAccount() {
 function mainMenu(name) {
     console.log(`What do you want to do now, ${name}?`);
     console.log("Type 'help' for a list of commands.");
-    const command = prompt(`What are you going to do now, ${name}?`).toLowerCase();
+    console.log(`What are you going to do now, ${name}?`);
+    const command = prompt(`>>>`).toLowerCase();
 
     switch (command) {
         case "help":
-            //
+            console.log("Commands:");
+            console.log("endProgram");
+            console.log("accounts");
+            console.log("versions");
+            console.log("passwords");
+            console.log("newAccount");
+            console.log("changeAccount");
+            console.log("More commands comming soon.");
             break;
         case "endprogram":
             console.log("Shutting down...");
             console.log("Shutdown process complete.");
-            break;
         case "accounts":
+            console.log("Here are your active accounts:");
             console.log(accounts);
-            // ... (handle further actions)
             break;
-        // ... (other cases)
+        case "version":
+            console.log("Version 1.1.2");
+            break;
+        case "passwords":
+            console.log("Here are all your saved passwords:");
+            console.log(passwords);
+            break;
+        case "newAccount":
+            console.log("loading...");
+            createAccount();
+            break;
         default:
             console.log("Invalid command. Please try again.");
     }
-
-    // Recursive call to mainMenu, but with a condition to avoid infinite loop
     if (command !== "endprogram") {
         mainMenu(name);
     }
 }
-
-// ... (implement other functions like 'apps()', 'newAccount()', etc.)
 
 startUp();
