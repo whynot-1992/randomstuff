@@ -37,6 +37,7 @@ function mainMenu(name) {
 
     switch (command) {
         case "help":
+            //
             break;
         case "endprogram":
             console.log("Shutting down...");
@@ -44,13 +45,19 @@ function mainMenu(name) {
             break;
         case "accounts":
             console.log(accounts);
+            // ... (handle further actions)
             break;
+        // ... (other cases)
         default:
             console.log("Invalid command. Please try again.");
     }
+
+    // Recursive call to mainMenu, but with a condition to avoid infinite loop
     if (command !== "endprogram") {
         mainMenu(name);
     }
 }
+
+// ... (implement other functions like 'apps()', 'newAccount()', etc.)
 
 startUp();
