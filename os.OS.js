@@ -11,7 +11,8 @@ const apps = [
 function startUp() {
     console.log("Welcome to os.OS. What would you like to do?");
     console.log("Terminate this program or create an account?");
-    const choice1 = prompt("What would you like to do?");
+    console.log("What would you like to do?");
+    const choice1 = prompt(">>>");
 
     if (choice1.toLowerCase() === "terminate this program") {
         console.log("Shutting down...");
@@ -22,8 +23,10 @@ function startUp() {
 }
 
 function createAccount() {
-    const name = prompt("What is your name?");
-    const password = prompt("Create a password.");
+    console.log("What is your name?");
+    const name = prompt(">>>");
+    console.log("Create a password");
+    const password = prompt(">>>");
 
     accounts.push(name);
     passwords.push(password);
