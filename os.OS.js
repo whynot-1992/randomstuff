@@ -46,6 +46,7 @@ function mainMenu(name) {
             console.log("versions");
             console.log("passwords");
             console.log("newAccount");
+            console.log("reboot");
             console.log("More commands comming soon.");
             break;
         case "endprogram":
@@ -56,7 +57,7 @@ function mainMenu(name) {
             console.log(accounts);
             break;
         case "version":
-            console.log("Version 1.1.2");
+            console.log("Version 1.1.1");
             break;
         case "passwords":
             console.log("Here are all your saved passwords:");
@@ -66,6 +67,8 @@ function mainMenu(name) {
             console.log("loading...");
             createAccount();
             break;
+        case "reboot":
+            startUp();
         default:
             console.log("Invalid command. Please try again.");
     }
